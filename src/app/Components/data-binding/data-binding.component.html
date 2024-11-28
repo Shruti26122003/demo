@@ -4,7 +4,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-6 p-3 bg-success text-center">
+  <div class="col-6 p-3 bg-success text-center" (onMouseEnter)="onMouseEnter()">
     <h3> One Way </h3>
   </div>
 
@@ -70,7 +70,6 @@
   <input [type]="myInputType" name="" id="">
 </div>
 
-
 <div class="row">
   <div class="col-2">
     <button class="btn-btn-primary" (click)="showMessage()">Show Message</button>
@@ -85,4 +84,15 @@
     </select>
   </div>
 </div>
+
+<div class="row pt-3 pb-5">
+  <div class="col-3">
+    <input type="text" [value]="courseName" placeholder="Course Name">
+  </div>
+
+  <div class="col-3">
+    <input type="text" [(ngModel)]="courseName"  placeholder="Course Name">
+  </div>
+</div>
+
 
